@@ -14,7 +14,7 @@ header {
 
 nav a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
 }
 
@@ -26,4 +26,137 @@ nav{
     display: flex;
     gap: 30px;
     padding: 15px;
+}
+
+.hero{
+  height: 90vh;
+  background:url("../BiteBox/images/Banner.png")no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(230, 219, 219);
+}
+
+.hero button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover{
+  background-color: black;
+}
+
+.video-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 40px;
+}
+
+.video-text{
+  flex: 1;
+}
+.video-box{
+  flex: 1;
+}
+
+.video-box video{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.video-text h2{
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.about{
+  text-align: center;
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.about h2{
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: rgb(255, 0, 0);
+}
+
+.about p{
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  color: gray;
+  line-height: 1.3;
+}
+
+.footer{
+  background-color: black;
+  color: white ;
+  width: 100%;
+  padding: 40px 50px 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+
+.footer-box span{
+color: red;
+}
+
+.footer-box {
+  padding: 10px 20px;
+}
+
+.footer-box h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer-box h3 {
+  margin-bottom: 15px;
+}
+
+.footer-box p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-box a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.socialmedia-icons a{
+  display: inline-block;
+  font-size: 20px;
+}
+
+/* Hover */
+.footer-box a:hover {
+    color: red;
+}
+
+/* Copyright */
+.copyright {
+    grid-column: 1 / -1;
+    text-align: center;
+
+    border-top: 1px solid #333;
+    margin-top: 25px;
+    padding-top: 20px;
+
+    font-size: 13px;
+}
+
+.footer-box a{
+  display: inline-block;
 }
