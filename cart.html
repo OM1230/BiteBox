@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/5da90b84f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5da90b84f3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -21,5 +24,101 @@
         >
       </nav>
     </header>
+
+    <section class="cart">
+      <h2 style="text-align: center">Your Cart</h2>
+      <table>
+        <thead>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Qty</th>
+          <th>Total</th>
+          <th>Remove</th>
+        </thead>
+
+        <tbody>
+          <!-- 1st Item -->
+          <tr>
+            <td class="item">
+              <img src="images/burger.jpg" alt="" height="450px" />
+              <div>
+                <h4>Cheese Burger</h4>
+                <p>Juicy grilled burger</p>
+              </div>
+            </td>
+
+            <td>₹199</td>
+
+            <td>
+              <div class="qty-box">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+            </td>
+
+            <td>₹199</td>
+
+            <td><button class="remove">╳</button></td>
+          </tr>
+
+          <!-- 2nd Item -->
+          <tr>
+            <td class="item">
+              <img src="images/paneerPizza.jpg" alt="" />
+              <div>
+                <h4>Paneer Pizza</h4>
+                <p>Cheese Paneer Pizza</p>
+              </div>
+            </td>
+
+            <td>₹399</td>
+
+            <td>
+              <div class="qty-box">
+                <button>-</button>
+                <span>2</span>
+                <button>+</button>
+              </div>
+            </td>
+
+            <td>₹399</td>
+
+            <td><button class="remove">╳</button></td>
+          </tr>
+
+          <!-- 3rd Item -->
+          <tr>
+            <td class="item">
+              <img src="images/loadedPasta.jpg" alt="" />
+              <div>
+                <h4>Cheese Pasta</h4>
+                <p>Cheese loaded pasta</p>
+              </div>
+            </td>
+
+            <td>₹149</td>
+
+            <td>
+              <div class="qty-box">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+              </div>
+            </td>
+
+            <td>₹149</td>
+
+            <td><button class="remove">╳</button></td>
+          </tr>
+
+          <tr class="grand-total">
+            <td colspan="3">Grand Total</td>
+            <td>₹747</td>
+            <td><button>Proceed</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </body>
 </html>

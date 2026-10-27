@@ -12,25 +12,25 @@ header {
   background-color: black;
 }
 
-nav a{
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
 }
 
-a:hover{
-    color: red;
+a:hover {
+  color: red;
 }
 
-nav{
-    display: flex;
-    gap: 30px;
-    padding: 15px;
+nav {
+  display: flex;
+  gap: 30px;
+  padding: 15px;
 }
 
-.hero{
+.hero {
   height: 90vh;
-  background:url("../BiteBox/images/Banner.png")no-repeat center/cover;
+  background: url("../BiteBox/images/Banner.png") no-repeat center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,11 +47,11 @@ nav{
   cursor: pointer;
 }
 
-.hero button:hover{
+.hero button:hover {
   background-color: black;
 }
 
-.video-section{
+.video-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,36 +59,36 @@ nav{
   gap: 40px;
 }
 
-.video-text{
+.video-text {
   flex: 1;
 }
-.video-box{
+.video-box {
   flex: 1;
 }
 
-.video-box video{
+.video-box video {
   width: 100%;
   border-radius: 15px;
 }
 
-.video-text h2{
+.video-text h2 {
   font-size: 32px;
   margin-bottom: 15px;
 }
 
-.about{
+.about {
   text-align: center;
   padding: 60px 20px;
   background-color: white;
 }
 
-.about h2{
+.about h2 {
   font-size: 32px;
   margin-bottom: 20px;
   color: rgb(255, 0, 0);
 }
 
-.about p{
+.about p {
   max-width: 700px;
   margin: auto;
   font-size: 18px;
@@ -96,18 +96,17 @@ nav{
   line-height: 1.3;
 }
 
-.footer{
+.footer {
   background-color: black;
-  color: white ;
+  color: white;
   width: 100%;
   padding: 40px 50px 15px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
 }
 
-.footer-box span{
-color: red;
+.footer-box span {
+  color: red;
 }
 
 .footer-box {
@@ -135,7 +134,7 @@ color: red;
   margin-bottom: 5px;
 }
 
-.socialmedia-icons a{
+.socialmedia-icons a {
   display: inline-block;
   font-size: 20px;
 }
@@ -143,23 +142,23 @@ color: red;
 /* Hover */
 
 .footer-box a:hover {
-    color: red;
+  color: red;
 }
 
 /* Copyright */
 
 .copyright {
-    grid-column: 1 / -1;
-    text-align: center;
+  grid-column: 1 / -1;
+  text-align: center;
 
-    border-top: 1px solid #333;
-    margin-top: 25px;
-    padding-top: 20px;
+  border-top: 1px solid #333;
+  margin-top: 25px;
+  padding-top: 20px;
 
-    font-size: 13px;
+  font-size: 13px;
 }
 
-.footer-box a{
+.footer-box a {
   display: inline-block;
 }
 
@@ -173,7 +172,7 @@ color: red;
   justify-content: center;
 }
 
-.icon-box{
+.icon-box {
   min-width: 100px;
   text-align: center;
   cursor: pointer;
@@ -233,7 +232,7 @@ color: red;
   margin-top: 5px;
 }
 
-.card button:hover{
+.card button:hover {
   background: darkred;
 }
 
@@ -244,8 +243,8 @@ color: red;
   background: white;
 }
 
-.deal-hero{
-  background: linear-gradient(to right, black, grey );
+.deal-hero {
+  background: linear-gradient(to right, black, grey);
   border-radius: 10px;
   color: white;
   margin: 10px;
@@ -313,7 +312,7 @@ color: red;
   transform: translateY(8px);
 }
 
-/* day wisw offer */
+/* day wise offer */
 .deal-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -345,4 +344,178 @@ color: red;
 
 .section-title {
   margin-left: 25px;
+}
+
+.red {
+  border-top: 5px solid red;
+}
+
+.yellow {
+  border-top: 5px solid yellow;
+}
+
+.green {
+  border-top: 5px solid green;
+}
+
+/* Cart design */
+table {
+  width: 70%;
+  border-collapse: collapse;
+  background: white;
+  overflow: hidden;
+  margin: auto;
+}
+
+thead {
+  background: red;
+  color: white;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+tbody tr {
+  border-bottom: 2px solid grey;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.remove {
+  background-color: red;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove:hover {
+  background-color: darkred;
+}
+
+.grand-total td {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.grand-total button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.grand-total button:hover {
+  background: darkred;
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.qty-box button {
+  width: 28px;
+  height: 20px;
+  border: none;
+  background: red;
+  color: white;
+  font: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.qty-box button:hover {
+  background-color: darkred;
+}
+
+.qty-box span {
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* signup page */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, black, grey);
+}
+
+.auth-box {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0px 8px 30px rgb(147, 132, 104);
+}
+
+.auth-box h2 {
+  margin-bottom: 20px;
+  color: black;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+
+.auth-box input:focus {
+  border-color: red;
+  font-weight: bold;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 10px;
+  background: red;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.auth-box button:hover {
+  background-color: darkred;
+}
+
+.auth-box p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-box a {
+  color: red ;
+  text-decoration: none;
+}
+
+.auth-box span {
+  color: red;
 }

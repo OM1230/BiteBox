@@ -17,9 +17,34 @@
         <a href="biteDeals.html">BiteDeals</a>
         <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
         <a href="login.html"
-          ><i class="fa-solid fa-right-to-bracket"></i>Login</a
-        >
+          ><i class="fa-solid fa-right-to-bracket"></i>Login</a>
       </nav>
     </header>
+    <!-- Header ends here -->
+
+    <!-- Login  -->
+     <section class="auth-container">
+      <div class="auth-box">
+        <h2>Login</h2>
+        <!-- login form -->
+         <form action="" onsubmit="login(event)">
+          <input type="email" placeholder="Enter Email" id="email" required>
+
+          <div style="position: relative;">
+            <input type="password" name="" id="password" placeholder="Enter password" required>
+            <span onclick="showPassword()" style="position: absolute; right:0px; top:30px; color: black; transform:translateY(-50%); cursor: pointer"><i class="fa-solid fa-eye"></i></span>
+          </div>
+
+          <!-- <input type="password" placeholder="Enter Password" id="password" required> -->
+          <button onclick="login()" type="submit">Login</button>
+         </form>
+         <p id="error" style="color: red;"></p>
+         <span>Forgot Password</span>
+         <p>Don't have a accout? <a href="signup.html">Signup</a></p>
+
+      </div>
+     </section>
+
+     <script src="JavaScript/script.js"></script>
   </body>
 </html>
